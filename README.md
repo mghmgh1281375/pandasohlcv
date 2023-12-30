@@ -7,7 +7,6 @@
 # Example
 ```python
 from pandasohlcv import ohlcv_resampler
-import numpy as np
 import time
 
 t0 = time.time()
