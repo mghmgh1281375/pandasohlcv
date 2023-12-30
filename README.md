@@ -1,3 +1,5 @@
+[![Python application](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/python-app.yml/badge.svg)](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/python-app.yml)
+
 # Installation
 
 1. `git clone https://github.com/mghmgh1281375/pandasohlcv.git`
