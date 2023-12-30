@@ -1,11 +1,14 @@
 [![Python application](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/python-app.yml/badge.svg)](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/python-app.yml)
 [![Pylint](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/pylint.yml/badge.svg)](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/pylint.yml)
+![GitHub License](https://img.shields.io/github/license/mghmgh1281375/pandasohlcv)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/mghmgh1281375/pandasohlcv)
+
+
 
 # Installation
 
-1. `git clone https://github.com/mghmgh1281375/pandasohlcv.git`
-2. `cd pandasohlcv`
-3. `python setup.py build_ext --inplace`
+`pip install https://github.com/mghmgh1281375/pandasohlcv/archive/refs/tags/v0.1.0.zip`
+
 
 # Example
 ```python
