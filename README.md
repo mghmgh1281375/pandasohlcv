@@ -1,8 +1,8 @@
 # Installation
 
-1. git clone https://github.com/mghmgh1281375/pandasohlcv.git
-2. cd pandasohlcv
-3. python setup.py build_ext --inplace
+1. `git clone https://github.com/mghmgh1281375/pandasohlcv.git`
+2. `cd pandasohlcv`
+3. `python setup.py build_ext --inplace`
 
 # Example
 ```python
