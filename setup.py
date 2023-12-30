@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from Cython.Build import cythonize
 import numpy
- 
+
 setup(
     name='pandasohlcv',
     version='0.1.0',
