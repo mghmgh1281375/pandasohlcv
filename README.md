@@ -1,4 +1,5 @@
 [![Python application](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/python-app.yml/badge.svg)](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/python-app.yml)
+[![Pylint](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/pylint.yml/badge.svg)](https://github.com/mghmgh1281375/pandasohlcv/actions/workflows/pylint.yml)
 
 # Installation
 
