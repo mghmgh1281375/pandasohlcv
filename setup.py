@@ -1,3 +1,27 @@
+"""
+pandasohlcv Setup Script
+
+This script is used to configure the installation of the pandasohlcv package
+    using setuptools.
+
+- Author: Mohammad Ghorbani
+- Version: 0.1.0
+- Python Version: >=3.9.5, <4
+
+Dependencies:
+The required dependencies for this package are listed in the 'requirements.txt' file.
+
+Usage:
+- To install the package and its dependencies, use: 'pip install .'
+- To build the Cython extension module, 'ohlcv_grouper.pyx',
+    use: 'python setup.py build_ext --inplace'
+
+Note:
+Make sure to have Cython and numpy installed before building the extension
+    module.
+
+"""
+
 from setuptools import setup, find_packages
 from Cython.Build import cythonize
 import numpy

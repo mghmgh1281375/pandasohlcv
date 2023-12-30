@@ -1,3 +1,4 @@
+"""This module prepares ohlcv_resampler function."""
 import pandas as pd
 import numpy as np
 from pandasohlcv import ohlcv_grouper  # pylint: disable=W0406
