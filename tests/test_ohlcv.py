@@ -9,13 +9,13 @@ class OHLCVTestCase(unittest.TestCase):
     def __init__(self, methodName: str = "runTest") -> None:
         super().__init__(methodName)
         np.random.seed(42)
-        self.cond = dict(
-            open=lambda a: self.asscalar(a.dropna().first("T").values),
-            high=np.nanmax,
-            low=np.nanmin,
-            close=lambda a: self.asscalar(a.dropna().last("T").values),
-            volume=lambda a: np.nansum(a) if not np.isnan(a).all() else np.nan,
-        )
+        self.cond = {
+            'open': lambda a: self.asscalar(a.dropna().first("T").values),
+            'high': np.nanmax,
+            'low': np.nanmin,
+            'close': lambda a: self.asscalar(a.dropna().last("T").values),
+            'volume': lambda a: np.nansum(a) if not np.isnan(a).all() else np.nan,
+        }
 
         columns = ["open", "high", "low", "close", "volume"]
         index = pd.date_range("2023-01-01", "2023-02-02", freq="T")
@@ -27,8 +27,7 @@ class OHLCVTestCase(unittest.TestCase):
     def asscalar(arr):
         if len(arr) > 0:
             return np.float64(arr.item())
-        else:
-            return np.nan
+        return np.nan
 
     def test_ohlcv(self):
         t0 = time.time()
