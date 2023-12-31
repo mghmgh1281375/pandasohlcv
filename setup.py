@@ -31,7 +31,7 @@ with open("requirements.txt", "r", encoding="utf-8") as f:
 
 setup(
     name="pandasohlcv",
-    version="0.1.0",
+    version="0.2.0",
     author="Mohammad Ghorbani",
     packages=find_packages(),
     install_requires=requirements,
