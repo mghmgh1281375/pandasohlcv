@@ -26,3 +26,21 @@ def ohlcv_resampler(df: pd.DataFrame, freq: str) -> pd.DataFrame:
     )
 
     return pd.DataFrame(out, gpr.result_index, columns=df.columns)
+
+
+def ohlcv_resampler_on_windows(windows: np.ndarray) -> np.ndarray:
+    """_summary_
+
+    Args:
+        windows (np.ndarray): _description_
+
+    Returns:
+        np.ndarray: _description_
+    """
+    assert windows.ndim == 3
+
+    out = np.empty((windows.shape[0], 5), dtype=np.float64)
+    out = np.ascontiguousarray(out)
+    ohlcv_grouper.ohlcv_grouper_on_windows(out, np.ascontiguousarray(windows.copy()))
+
+    return out
