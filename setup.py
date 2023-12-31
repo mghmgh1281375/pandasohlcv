@@ -5,7 +5,7 @@ This script is used to configure the installation of the pandasohlcv package
     using setuptools.
 
 - Author: Mohammad Ghorbani
-- Version: 0.1.0
+- Version: 0.2.0
 - Python Version: >=3.9.5, <4
 
 Dependencies:

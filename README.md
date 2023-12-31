@@ -7,7 +7,7 @@
 
 # Installation
 
-`pip install https://github.com/mghmgh1281375/pandasohlcv/archive/refs/tags/v0.1.0.zip`
+`pip install https://github.com/mghmgh1281375/pandasohlcv/archive/refs/tags/v0.2.0.zip`
 
 
 # Example

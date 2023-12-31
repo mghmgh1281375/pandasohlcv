@@ -13,7 +13,7 @@ Additionally, the test case class includes two test methods: 'test_ohlcv' and
 different scenarios of the 'ohlcv_resampler' function.
 
 - Author: Mohammad Ghorbani
-- Version: 0.1.0
+- Version: 0.2.0
 - Dependencies: numpy, pandas, pandasohlcv
 
 """
