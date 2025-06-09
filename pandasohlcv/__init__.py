@@ -29,13 +29,21 @@ def ohlcv_resampler(df: pd.DataFrame, freq: str) -> pd.DataFrame:
 
 
 def ohlcv_resampler_on_windows(windows: np.ndarray) -> np.ndarray:
-    """_summary_
+    """Resamples OHLCV data from a 3D array of windows.
+
+    This function takes a 3D NumPy array representing multiple windows of OHLCV (Open, High, Low, Close, Volume) data 
+    and resamples it into a 2D array where each row corresponds to a window and contains the aggregated OHLCV values.
 
     Args:
-        windows (np.ndarray): _description_
+        windows (np.ndarray): A 3D NumPy array of shape (n_windows, n_timesteps, 5) where:
+            - n_windows: The number of windows.
+            - n_timesteps: The number of time steps in each window.
+            - 5: Represents the OHLCV components (Open, High, Low, Close, Volume).
 
     Returns:
-        np.ndarray: _description_
+        np.ndarray: A 2D NumPy array of shape (n_windows, 5) containing the resampled OHLCV values for each window, 
+        where each row corresponds to a window and the columns represent the aggregated Open, High, Low, Close, 
+        and Volume values respectively.
     """
     assert windows.ndim == 3
 
